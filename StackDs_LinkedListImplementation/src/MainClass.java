@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class MainClass {
 
     public static void main(String args[]){
+        //file to get test data
         File myTestFile = new File("C:\\Users\\Prosper's PC\\Documents\\LinkedListTesting.txt");
         LinkedList myLink = new LinkedList();
         try {
