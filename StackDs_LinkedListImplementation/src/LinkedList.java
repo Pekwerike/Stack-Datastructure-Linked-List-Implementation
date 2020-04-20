@@ -1,4 +1,4 @@
-public class LinkedList {
+public class LinkedList <Item> {
 
     /**
      * initializing the First node in the linkedList
@@ -9,7 +9,7 @@ public class LinkedList {
      * Data class to represent a single node in the linkedList
      **/
     class Node {
-        String Item;
+        Item Item;
         Node next;
     }
 
@@ -23,7 +23,7 @@ public class LinkedList {
     /**
      * Putting items inside the linkedList
      **/
-    public void push(String dataToInsert) {
+    public void push(Item dataToInsert) {
         /**Check if the linked list is empty**/
         if (isEmpty()) {
             first = new Node();
@@ -45,8 +45,8 @@ public class LinkedList {
     /**
      * Returning items from the list
      **/
-    public String pop() {
-        String itemToBePoped;
+    public Item pop() {
+        Item itemToBePoped;
         /**Check if the linked list is empty**/
         if (isEmpty()) {
             return null;
